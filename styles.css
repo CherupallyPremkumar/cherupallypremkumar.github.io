@@ -4,6 +4,12 @@ body, h1, h2, p, ul {
     padding: 0;
 }
 
+.logo img {
+    width: 80px;
+    height: auto;
+    background-image: url("../images/logo.png");
+}
+
 /* Main Header Styles */
 .main-header {
     background-color: #333;
