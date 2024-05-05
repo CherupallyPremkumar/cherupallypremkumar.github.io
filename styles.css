@@ -1,43 +1,72 @@
 /* Reset default margin and padding */
-body, h1, p, ul {
+body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
 
-/* Main header styles */
+/* Main Header Styles */
 .main-header {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 20px; /* Padding around header content */
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Align items at each end */
-    align-items: center; /* Center items vertically */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo-container img {
-    width: 80px; /* Set logo image width */
-    height: auto; /* Maintain aspect ratio */
+.logo img {
+    width: 80px;
+    height: auto;
 }
 
 .nav-links {
-    list-style: none; /* Remove default list styles */
+    list-style: none;
 }
 
 .nav-links li {
-    display: inline-block; /* Display list items horizontally */
-    margin-right: 20px; /* Add space between list items */
+    display: inline-block;
+    margin-right: 20px;
 }
 
 .nav-links li:last-child {
-    margin-right: 0; /* Remove margin from last list item */
+    margin-right: 0;
 }
 
 .nav-links a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* White text color */
-    font-weight: bold; /* Bold text */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
-.content {
-    padding: 20px; /* Add padding to main content */
+/* Main Content Styles */
+.main-content {
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-section,
+.services-section,
+.contact-section {
+    margin-bottom: 30px;
+}
+
+/* Main Footer Styles */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
