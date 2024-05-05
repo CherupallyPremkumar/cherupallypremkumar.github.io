@@ -1,5 +1,43 @@
-body{
-    margin:0;
-    background:pink;
-    text-align:center;
+/* Reset default margin and padding */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Main header styles */
+.main-header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding around header content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items at each end */
+    align-items: center; /* Center items vertically */
+}
+
+.logo-container img {
+    width: 80px; /* Set logo image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styles */
+}
+
+.nav-links li {
+    display: inline-block; /* Display list items horizontally */
+    margin-right: 20px; /* Add space between list items */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from last list item */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White text color */
+    font-weight: bold; /* Bold text */
+}
+
+.content {
+    padding: 20px; /* Add padding to main content */
 }
