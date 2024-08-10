@@ -29,7 +29,7 @@ entries:
       output: web,pdf
       type: homepage
 
-    - title: The Autonomy Pyramid
+    - title: Learn about Complexities
       url: /the-autonomy-pyramid.html
       output: web, pdf
 
