@@ -1,3 +1,12 @@
+---
+title: ASCII vs UTF-8
+keywords: homepage
+tags: [autonomy introduction modulith chenile]
+sidebar: chenile_sidebar
+permalink: /ascii-vs-utf8.html
+summary: We explain the Autonomy Pyramid. Then we talk about Chenile's recommendation 
+---
+
 ### 1\. Single-Byte Character Sets (like ASCII)
 
 *   **ASCII**: This is a basic character set that represents English letters, digits, and some symbols. Each character in ASCII is stored using 1 byte (8 bits).

@@ -33,6 +33,10 @@ entries:
       url: /the-autonomy-pyramid.html
       output: web, pdf
 
+       - title: ASCII vs UTF-8
+      url: /ascii-vs-utf8.html
+      output: web, pdf
+
     - title: On Modulith Architecture
       url: /on-modulith-architecture.html
       output: web, pdf
