@@ -4,7 +4,7 @@ keywords: homepage
 tags: [autonomy introduction modulith chenile]
 sidebar: chenile_sidebar
 permalink: /ascii-vs-utf8.html
-summary: We explain the Autonomy Pyramid. Then we talk about Chenile's recommendation 
+summary: We explain the differences between Single-Byte Character Sets (like ASCII) and Multibyte Character Sets (like UTF-8). Then we have explained with an example 
 ---
 
 ### 1\. Single-Byte Character Sets (like ASCII)
