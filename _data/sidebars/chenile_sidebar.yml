@@ -184,6 +184,7 @@ entries:
 
   - title: Data Structures & Algorithm 
     output: web, pdf
+    url: /introduction-to-dsa.html
     folderitems:
 
       - title: introduction to DSA
