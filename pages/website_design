@@ -1,0 +1,50 @@
+@startuml
+!define RECTANGLE class
+!define DATABASE database
+!define ACTOR actor
+!define INTERFACE interface
+
+' Define Frontend components and frameworks
+rectangle "Frontend" {
+  [User Interface] <<React>>
+  [Search Interface] <<React>>
+  [Content Display] <<React>>
+}
+
+' Define Backend components and frameworks
+rectangle "Backend" {
+  [API Gateway] <<Spring Boot>>
+  [User Service] <<Spring Boot>>
+  [Content Service] <<Spring Boot>>
+  [Search Service] <<Spring Boot>>
+  [Auth Service] <<Spring Boot>>
+}
+
+' Define Database components
+database "Database" {
+  [User Database] <<PostgreSQL>>
+  [Content Database] <<PostgreSQL>>
+  [Search Index] <<Elasticsearch>>
+}
+
+' Define External Services
+rectangle "External Services" {
+  [Third-Party APIs]
+  [CDN] <<Cloudflare>>
+}
+
+' Define interactions
+ACTOR User
+User --> [User Interface] : Access Platform
+[User Interface] --> [API Gateway] : API Requests
+[API Gateway] --> [User Service] : User Data
+[API Gateway] --> [Content Service] : Content Data
+[API Gateway] --> [Search Service] : Search Queries
+[User Service] --> [User Database] : Retrieve/Store User Data
+[Content Service] --> [Content Database] : Retrieve/Store Content Data
+[Search Service] --> [Search Index] : Search Queries
+[Search Service] --> [Search Index] : Update Index
+[Content Service] --> [Third-Party APIs] : External Content
+[User Interface] --> [CDN] : Static Assets
+
+@enduml
