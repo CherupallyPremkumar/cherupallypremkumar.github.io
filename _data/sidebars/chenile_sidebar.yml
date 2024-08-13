@@ -182,6 +182,14 @@ entries:
         url: /oauth2.html
         output: web,pdf
 
+  - title: Data Structures & Algorithm 
+    output: web, pdf
+    folderitems:
+
+      - title: introduction to DSA
+        url: /introduction-to-dsa.html
+        output: web,pdf
+
   
 
 
