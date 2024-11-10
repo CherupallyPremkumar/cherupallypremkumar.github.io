@@ -1,0 +1,32 @@
+@startuml
+
+interface RequestUpgradeStrategy {
+    +List<WebSocketExtension> getSupportedExtensions(ServerHttpRequest request)
+    +void upgrade(ServerHttpRequest request, ServerHttpResponse response,
+                  String selectedProtocol, List<WebSocketExtension> selectedExtensions,
+                  Principal user, WebSocketHandler wsHandler, Map<String, Object> attrs)
+}
+
+abstract class AbstractStandardUpgradeStrategy implements RequestUpgradeStrategy
+abstract class AbstractTyrusRequestUpgradeStrategy implements RequestUpgradeStrategy
+class JettyRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class StandardWebSocketUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class TomcatRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class UndertowRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class WebLogicRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class WebSphereRequestUpgradeStrategy extends AbstractStandardUpgradeStrategy
+class GlassFishRequestUpgradeStrategy extends AbstractTyrusRequestUpgradeStrategy
+
+RequestUpgradeStrategy <|.. AbstractStandardUpgradeStrategy
+RequestUpgradeStrategy <|.. AbstractTyrusRequestUpgradeStrategy
+
+AbstractStandardUpgradeStrategy <|-- JettyRequestUpgradeStrategy
+AbstractStandardUpgradeStrategy <|-- StandardWebSocketUpgradeStrategy
+AbstractStandardUpgradeStrategy <|-- TomcatRequestUpgradeStrategy
+AbstractStandardUpgradeStrategy <|-- UndertowRequestUpgradeStrategy
+AbstractStandardUpgradeStrategy <|-- WebLogicRequestUpgradeStrategy
+AbstractStandardUpgradeStrategy <|-- WebSphereRequestUpgradeStrategy
+
+AbstractTyrusRequestUpgradeStrategy <|-- GlassFishRequestUpgradeStrategy
+
+@enduml
